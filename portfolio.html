@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  404 INDUSTRIES · portfolio.html                            ║
+  ║  Built by: 404 Industries Development Team                  ║
+  ║  Stack: HTML5 · CSS3 · Vanilla JS                           ║
+  ║  "We find what others miss."                                ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | 404 Industries</title>
+  <meta name="description" content="Explore real-world outcomes from 404 Industries — websites, software, IT platforms, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Unique gradient palettes per portfolio card */
+    .port-bg-1 { background: linear-gradient(135deg, #0e1e38, #16305a, #1a4280); }
+    .port-bg-2 { background: linear-gradient(135deg, #121a0e, #1c2d14, #24401a); }
+    .port-bg-3 { background: linear-gradient(135deg, #1a0e24, #2c1540, #3b1c5a); }
+    .port-bg-4 { background: linear-gradient(135deg, #1a1209, #2e1e0a, #422a0a); }
+    .port-bg-5 { background: linear-gradient(135deg, #0a1420, #0c1e32, #0d2848); }
+    .port-bg-6 { background: linear-gradient(135deg, #1a0e0e, #2e1212, #401a1a); }
+    .port-bg-7 { background: linear-gradient(135deg, #080f1a, #0e1c30, #162845); }
+    .port-bg-8 { background: linear-gradient(135deg, #0a180a, #122012, #182c18); }
+  </style>
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- ─── Navigation ─────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html" aria-label="404 Industries home">
+        <span class="brand-badge">404</span>
+        <span class="brand-name">Industries</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home <span>&#8594;</span></a>
+    <a href="services.html">Services <span>&#8594;</span></a>
+    <a href="portfolio.html">Portfolio <span>&#8594;</span></a>
+    <a href="about.html">About <span>&#8594;</span></a>
+    <a href="contact.html">Get Started &#8594;</a>
+  </nav>
+
+  <!-- ─── Page Hero ──────────────────────────────────────────── -->
+  <section class="pg-hero">
+    <div class="container">
+      <span class="overline reveal" style="margin-bottom:1rem;">Our Work</span>
+      <h1 class="display-lg reveal" data-delay="80" style="margin-bottom:1.25rem;max-width:580px;">
+        Real outcomes for real businesses.
+      </h1>
+      <p class="body-lg reveal" data-delay="160" style="max-width:500px;">
+        Every project starts with a problem. Here's how we solved them.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── Portfolio ──────────────────────────────────────────── -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <!-- Filter bar -->
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem;" class="reveal">
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="it">IT &amp; Security</button>
+          <button class="filter-btn" data-filter="marketing">Marketing</button>
+        </div>
+        <span class="body-sm" style="font-family:var(--f-mono);font-size:0.72rem;letter-spacing:0.05em;color:var(--t3);">8 PROJECTS</span>
+      </div>
+
+      <!-- Grid -->
+      <div class="port-grid">
+
+        <!-- 1: Restaurant Website -->
+        <div class="port-item reveal" data-category="web">
+          <div class="port-bg port-bg-1">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(45,212,232,0.15);border:1px solid rgba(45,212,232,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(45,212,232,0.7);">Website</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--cyan" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">Web Design</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">Bella Vista Restaurant</h5>
+            <p class="body-sm">Full redesign with online reservations — 3&#215; booking increase in 60 days.</p>
+          </div>
+        </div>
+
+        <!-- 2: E-commerce Store -->
+        <div class="port-item reveal" data-delay="100" data-category="web">
+          <div class="port-bg port-bg-2">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(45,212,232,0.15);border:1px solid rgba(45,212,232,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(45,212,232,0.7);">E-Commerce</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--cyan" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">Web Design</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">Maplewood Market</h5>
+            <p class="body-sm">Shopify store migration with custom theme — 28% lift in average order value.</p>
+          </div>
+        </div>
+
+        <!-- 3: Inventory App -->
+        <div class="port-item reveal" data-delay="200" data-category="software">
+          <div class="port-bg port-bg-3">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(249,124,69,0.15);border:1px solid rgba(249,124,69,0.25);display:flex;align-items:center;justify-content:center;color:var(--orange);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(249,124,69,0.7);">Software</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--orange" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">Custom Software</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">Stockwise Inventory App</h5>
+            <p class="body-sm">Custom inventory management platform for a regional distributor — cut manual entry by 80%.</p>
+          </div>
+        </div>
+
+        <!-- 4: IT Overhaul -->
+        <div class="port-item reveal" data-category="it">
+          <div class="port-bg port-bg-4">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(249,124,69,0.15);border:1px solid rgba(249,124,69,0.25);display:flex;align-items:center;justify-content:center;color:var(--orange);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(249,124,69,0.7);">IT</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--orange" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">IT Platform</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">Clearfield Law Cloud Migration</h5>
+            <p class="body-sm">Full on-prem to cloud migration for a 22-person law firm — zero downtime, HIPAA-aligned.</p>
+          </div>
+        </div>
+
+        <!-- 5: Marketing Campaign -->
+        <div class="port-item reveal" data-delay="100" data-category="marketing">
+          <div class="port-bg port-bg-5">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(45,212,232,0.15);border:1px solid rgba(45,212,232,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(45,212,232,0.7);">Marketing</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--cyan" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">Digital Marketing</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">Ridgeline HVAC Lead Gen</h5>
+            <p class="body-sm">Rebuilt the conversion funnel and ran targeted Google Ads — CPL down 41%, 3.2&#215; ROAS.</p>
+          </div>
+        </div>
+
+        <!-- 6: Security Audit -->
+        <div class="port-item reveal" data-delay="200" data-category="it">
+          <div class="port-bg port-bg-6">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(249,124,69,0.15);border:1px solid rgba(249,124,69,0.25);display:flex;align-items:center;justify-content:center;color:var(--orange);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(249,124,69,0.7);">Security</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--orange" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">Cybersecurity</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">PineCrest Credit Union Hardening</h5>
+            <p class="body-sm">Full security audit and remediation — 14 critical vulnerabilities patched before any breach occurred.</p>
+          </div>
+        </div>
+
+        <!-- 7: Booking Platform -->
+        <div class="port-item reveal" data-category="software">
+          <div class="port-bg port-bg-7">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(45,212,232,0.15);border:1px solid rgba(45,212,232,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(45,212,232,0.7);">Software</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--cyan" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">Custom Software</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">Harborlight Booking Platform</h5>
+            <p class="body-sm">Custom scheduling app for a marina — replaced 3 separate tools with one unified system.</p>
+          </div>
+        </div>
+
+        <!-- 8: Landscaping Website -->
+        <div class="port-item reveal" data-delay="100" data-category="web">
+          <div class="port-bg port-bg-8">
+            <div style="text-align:center;padding:1.5rem;">
+              <div style="width:52px;height:52px;border-radius:var(--r-md);background:rgba(45,212,232,0.15);border:1px solid rgba(45,212,232,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <span style="font-family:var(--f-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(45,212,232,0.7);">Website</span>
+            </div>
+          </div>
+          <div class="port-overlay">
+            <span class="pill pill--cyan" style="font-size:0.7rem;margin-bottom:0.6rem;width:fit-content;">Web Design</span>
+            <h5 style="font-family:var(--f-display);font-size:0.95rem;margin-bottom:0.3rem;">Greenridge Landscaping</h5>
+            <p class="body-sm">Brand-new website with quote request flow — 60 leads in the first 30 days, zero ad spend.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="overline" style="margin-bottom:1.25rem;">Your Project Next</span>
+        <h2 class="display-md" style="margin-bottom:1rem;">Let's add yours<br>to the list.</h2>
+        <p class="body-lg" style="max-width:420px;margin:0 auto 2.25rem;">Every great outcome starts with a conversation. Tell us about your project.</p>
+        <a href="contact.html" class="btn btn--primary btn--lg" style="position:relative;z-index:1;">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ──────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="nav-brand" href="index.html"><span class="brand-badge">404</span><span class="brand-name" style="margin-left:0.55rem;">Industries</span></a>
+          <p class="footer-desc">Future-ready engineering and digital solutions for local leaders who refuse to be left behind.</p>
+        </div>
+        <div>
+          <span class="footer-head">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-head">Services</span>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Design</a></li>
+            <li><a href="services.html">Custom Software</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">IT Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-head">Contact</span>
+          <ul class="footer-links">
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="mailto:404industries@pleasebeimpressed.art">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&#169; <span class="year"></span> 404 Industries. All rights reserved.</p>
+        <p>Future-ready engineering. Real business impact.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

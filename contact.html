@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  404 INDUSTRIES · contact.html                              ║
+  ║  Built by: 404 Industries Development Team                  ║
+  ║  Stack: HTML5 · CSS3 · Vanilla JS                           ║
+  ║  "We find what others miss."                                ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | 404 Industries</title>
+  <meta name="description" content="Start a project or ask a question — reach out to 404 Industries and get a response within one business day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .response-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--r-full);
+      background: rgba(45, 212, 232, 0.08);
+      border: 1px solid rgba(45, 212, 232, 0.2);
+      font-size: 0.8rem;
+      color: var(--cyan);
+      font-family: var(--f-mono);
+      letter-spacing: 0.04em;
+    }
+
+    .response-badge-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--cyan);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(45, 212, 232, 0.4); }
+      50%       { opacity: 0.75; box-shadow: 0 0 0 5px transparent; }
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bdr);
+      border-radius: var(--r-xl);
+      padding: 2.5rem;
+    }
+
+    .submit-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- ─── Navigation ─────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html" aria-label="404 Industries home">
+        <span class="brand-badge">404</span>
+        <span class="brand-name">Industries</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta active">Get Started</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home <span>&#8594;</span></a>
+    <a href="services.html">Services <span>&#8594;</span></a>
+    <a href="portfolio.html">Portfolio <span>&#8594;</span></a>
+    <a href="about.html">About <span>&#8594;</span></a>
+    <a href="contact.html">Get Started &#8594;</a>
+  </nav>
+
+  <!-- ─── Page Hero ──────────────────────────────────────────── -->
+  <section class="pg-hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <span class="overline reveal" style="margin-bottom:1rem;">Get in Touch</span>
+      <h1 class="display-lg reveal" data-delay="80" style="margin-bottom:1.25rem;max-width:580px;">
+        Let's talk about your project.
+      </h1>
+      <p class="body-lg reveal" data-delay="160" style="max-width:500px;margin-bottom:1.5rem;">
+        Fill out the form and we'll get back to you within one business day. No hard sell, no obligation — just a real conversation.
+      </p>
+      <div class="response-badge reveal" data-delay="220">
+        <span class="response-badge-dot"></span>
+        Typically responds within 24 hours
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact Section ────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: Info -->
+        <div class="reveal">
+
+          <h3 class="display-sm" style="margin-bottom:0.5rem;">Contact Information</h3>
+          <p class="body-sm" style="margin-bottom:2rem;">Prefer to reach out directly? Here's how to find us.</p>
+
+          <div class="contact-info-item">
+            <div class="icon-box icon-box--cyan" style="margin-bottom:0;flex-shrink:0;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p style="font-size:0.78rem;color:var(--t3);font-family:var(--f-mono);font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.25rem;">Email</p>
+              <a href="mailto:404industries@pleasebeimpressed.art" style="font-size:0.9rem;color:var(--t1);transition:color 0.2s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--t1)'">404industries@pleasebeimpressed.art</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="icon-box icon-box--orange" style="margin-bottom:0;flex-shrink:0;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <p style="font-size:0.78rem;color:var(--t3);font-family:var(--f-mono);font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.25rem;">Hours</p>
+              <p style="font-size:0.9rem;color:var(--t1);">Mon – Fri, 9am – 6pm</p>
+              <p style="font-size:0.82rem;color:var(--t2);">Support available 24/7</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="icon-box icon-box--cyan" style="margin-bottom:0;flex-shrink:0;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <p style="font-size:0.78rem;color:var(--t3);font-family:var(--f-mono);font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.25rem;">Response Time</p>
+              <p style="font-size:0.9rem;color:var(--t1);">Within 1 business day</p>
+              <p style="font-size:0.82rem;color:var(--t2);">Often within a few hours</p>
+            </div>
+          </div>
+
+          <!-- Quick stats -->
+          <div style="margin-top:2.5rem;padding:1.5rem;background:var(--bg-card);border:1px solid var(--bdr);border-radius:var(--r-lg);">
+            <p style="font-family:var(--f-mono);font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--t3);margin-bottom:1rem;">What to expect</p>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div style="display:flex;align-items:center;gap:0.75rem;">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--cyan);flex-shrink:0;"></div>
+                <p class="body-sm">Free 30-minute discovery call</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.75rem;">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--cyan);flex-shrink:0;"></div>
+                <p class="body-sm">No-obligation project estimate</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.75rem;">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;"></div>
+                <p class="body-sm">Clear timeline and pricing upfront</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.75rem;">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;"></div>
+                <p class="body-sm">Honest feedback — even if we're not the right fit</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-card reveal" data-delay="100">
+          <p style="font-family:var(--f-display);font-size:1.1rem;font-weight:700;margin-bottom:0.25rem;">Send a Message</p>
+          <p class="body-sm" style="margin-bottom:2rem;">All fields marked * are required.</p>
+
+          <form id="contact-form" novalidate>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name">
+                <span class="form-error" role="alert">Please enter your full name.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address *</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email">
+                <span class="form-error" role="alert">Please enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="company">Business / Company</label>
+              <input class="form-input" type="text" id="company" name="company" placeholder="Your Company Name" autocomplete="organization">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">Service You're Interested In</label>
+              <select class="form-input" id="service" name="service">
+                <option value="" disabled selected>Select a service…</option>
+                <option value="Custom Website">Custom Website</option>
+                <option value="Custom Software">Custom Software</option>
+                <option value="Digital Transformation">Digital Transformation</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="IT Support">IT Support</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Not Sure Yet">Not Sure Yet — Let's Talk</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell Us About Your Project *</label>
+              <textarea class="form-input" id="message" name="message" placeholder="Describe what you're trying to accomplish, any relevant details, and your approximate timeline or budget if you have one…" required></textarea>
+              <span class="form-error" role="alert">Please include a brief project description (at least 10 characters).</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary submit-btn">
+              Send Message
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4"/></svg>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ Strip ───────────────────────────────────────────── -->
+  <section class="section section--alt">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem;">
+        <span class="overline reveal" style="margin-bottom:0.75rem;">Common Questions</span>
+        <h2 class="display-md reveal" data-delay="80">Before you reach out</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+
+        <div class="card p-5 reveal">
+          <h6 style="font-family:var(--f-display);font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">How much does a website cost?</h6>
+          <p class="body-sm">It depends on scope, but most small business websites start around $1,500. Custom software and platform projects are priced per-project after a free discovery call.</p>
+        </div>
+
+        <div class="card p-5 reveal" data-delay="100">
+          <h6 style="font-family:var(--f-display);font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">How long does a project take?</h6>
+          <p class="body-sm">A standard website takes 2–4 weeks. Larger software projects are scoped individually, but we set realistic timelines from day one — no moving goalposts.</p>
+        </div>
+
+        <div class="card p-5 reveal" data-delay="150">
+          <h6 style="font-family:var(--f-display);font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">Do you offer ongoing maintenance?</h6>
+          <p class="body-sm">Yes. We offer monthly care plans that cover updates, security patches, uptime monitoring, and priority support. No long contracts required.</p>
+        </div>
+
+        <div class="card p-5 reveal" data-delay="200">
+          <h6 style="font-family:var(--f-display);font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">We already have a website — can you improve it?</h6>
+          <p class="body-sm">Absolutely. Whether it's a redesign, a performance fix, or adding new features, we work with existing sites all the time. Send us the URL and we'll take a look.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ──────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="nav-brand" href="index.html"><span class="brand-badge">404</span><span class="brand-name" style="margin-left:0.55rem;">Industries</span></a>
+          <p class="footer-desc">Future-ready engineering and digital solutions for local leaders who refuse to be left behind.</p>
+        </div>
+        <div>
+          <span class="footer-head">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-head">Services</span>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Design</a></li>
+            <li><a href="services.html">Custom Software</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">IT Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-head">Contact</span>
+          <ul class="footer-links">
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="mailto:404industries@pleasebeimpressed.art">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&#169; <span class="year"></span> 404 Industries. All rights reserved.</p>
+        <p>Future-ready engineering. Real business impact.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
